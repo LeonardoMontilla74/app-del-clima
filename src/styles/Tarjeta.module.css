@@ -23,12 +23,18 @@
 }
  
 /* mis estilos de la tarjeta */
-.button {
+.button .detalles {
     border-radius: 8px;
     color: #00000080;
     width: auto;
     border: none;
 }
+
+.detalles{
+  width: 30px;
+  height: 15px;
+}
+
 button:hover {
     cursor: pointer;
     transition: 300ms;

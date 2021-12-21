@@ -11,7 +11,7 @@ export default class Nav extends Component {
                         <img src={Logo} alt="soyHenry.com" width= "100px" />
                     </a>
                 <h1>App del clima</h1>
-                <Buscador />
+                    <Buscador buscador={this.props.buscador}/>
                 </div>
             </nav>
 

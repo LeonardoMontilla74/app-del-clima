@@ -6,7 +6,15 @@ export default class Contenedor extends Component {
     render() {
         return (
             <div className={Style.tarjetas}>
-            </div>
+                {this.props.listaCiudades.map(c => <Tarjeta
+                    key={c.id}
+                    name={c.name}
+                    min={c.min}
+                    max={c.max}
+                    img={c.img}
+                    id={c.id}
+          /> )}
+      </div>
         )
     }
 }
