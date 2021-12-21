@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
+import Contenedor from './component/Contenedor';
+import Nav from './component/Nav';
+import "./global.css"
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hola Mundo</h1>
+        <Nav />
+        <Contenedor />
       </div>
     )
   }

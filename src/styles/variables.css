@@ -1,0 +1,13 @@
+:root {
+    font-size: 18px;;
+  --fondo-transparent-white: #ffffff50;
+  --fondo-transparent-black: #00000048;
+  --fondo-button: rgba(255, 77, 77, 0.288);
+  --letter-black: #000000;
+  --letter-white: #ffff;
+}
+@media only screen and (max-width: 400px) {
+  :root{
+      font-size: 14px;
+  }
+}

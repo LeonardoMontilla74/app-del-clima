@@ -1,0 +1,8 @@
+body{
+    min-height: 100vh;
+    padding-bottom: 6rem;
+    position: relative;
+    background-image: url("../src/styles/img/atardecer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
