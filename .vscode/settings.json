@@ -55,14 +55,14 @@
     "editor.suggestSelection":"recentlyUsed",
     "editor.acceptSuggestionOnEnter": "off",
     
-    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "modificationsIfAvailable",
     "editor.detectIndentation": true,
 
-    "editor.defaultFormatter": "vscode.emmet",
+    //"editor.defaultFormatter": "vscode.emmet",
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.excludeLanguages": [],
     "emmet.includeLanguages": {
