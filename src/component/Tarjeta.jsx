@@ -5,8 +5,8 @@ export default class Tarjeta extends Component {
     render() {
         return (
             <div className={ style.card }>
-                <div className={style.cardBody}>
-                    <button className={style.button}>X</button>
+                <div>
+                    <button className="btn-close"></button>
                     <h5>{ this.props.name}</h5>
                 <div className="row">
                     <div className="col-sm-4 col-md-4 col-lg-4">
@@ -18,8 +18,8 @@ export default class Tarjeta extends Component {
                             <p>{ this.props.max}°</p>
                     </div>
                     <div className="col-sm-4 col-md-4 col-lg-4">
-                            <img className="iconoClima" src={`http://openweathermap.org/img/wn/${this.props.img}@2x.png`} width="30" height="30" alt="" />
-                            <button className={style.detalles}>Detalles</button>
+                            <img className="iconoClima" src={`http://openweathermap.org/img/wn/${this.props.img}@2x.png`} width="50" height="50" alt="" />
+                            <button className={style.button}>Detalles</button>
                     </div>
                 </div>
                 </div>

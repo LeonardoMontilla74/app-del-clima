@@ -3,37 +3,26 @@
 .card {
   margin: 20px;
   width: 20rem;
-  height: auto;
+  height: 10rem;
   text-align: center;
   background-color: var(--fondo-transparent-black);
   color: var(--letter-white);
   border-radius: 9999px;
 }
 
-#closeIcon {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 8px;
-  margin-top: 8px;
+@media only screen and (max-width: 600px) {
+  .card {
+    height: auto;
+  }
 }
 
-.cardBody {
-  margin-top: 0px !important;
-  padding-top: 0px !important;
-}
- 
-/* mis estilos de la tarjeta */
-.button .detalles {
+.button {
     border-radius: 8px;
     color: #00000080;
-    width: auto;
+    margin-right: 2rem;
     border: none;
 }
 
-.detalles{
-  width: 30px;
-  height: 15px;
-}
 
 button:hover {
     cursor: pointer;
