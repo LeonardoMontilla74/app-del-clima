@@ -13,6 +13,7 @@ export default class Contenedor extends Component {
                     max={c.max}
                     img={c.img}
                     id={c.id}
+                    btnCerrar={() => this.props.btnCerrar(c.id)}
           /> )}
       </div>
         )

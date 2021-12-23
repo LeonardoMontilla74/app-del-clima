@@ -6,7 +6,7 @@ export default class Tarjeta extends Component {
         return (
             <div className={ style.card }>
                 <div>
-                    <button className="btn-close"></button>
+                    <button className="btn-close" onClick={this.props.btnCerrar}></button>
                     <h5>{ this.props.name}</h5>
                 <div className="row">
                     <div className="col-sm-4 col-md-4 col-lg-4">

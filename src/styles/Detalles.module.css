@@ -1,0 +1,23 @@
+.card{
+    margin: 20px;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  background-color: var(--fondo-transparent-black);
+  color: var(--letter-white);
+  border-radius: 10px;
+}
+
+.button {
+    border-radius: 8px;
+    color: #00000080;
+    margin-right: 2rem;
+    border: none;
+}
+
+
+button:hover {
+    cursor: pointer;
+    transition: 300ms;
+    background-color: rgba(170, 198, 250, 0.521);
+}

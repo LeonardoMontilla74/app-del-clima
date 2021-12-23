@@ -16,6 +16,7 @@ export default class Buscador extends Component {
     enviarDatos = (e) => {
         e.preventDefault()
         this.props.buscador(this.state.ciudad)
+        this.setState({ ciudad: "" })
     }
     
 
@@ -26,6 +27,7 @@ export default class Buscador extends Component {
                     className="form-control me-2"
                     type="text"
                     placeholder="Ciudad..."
+                    value={this.state.ciudad}
                     onChange={this.capturarInput}
                 />
                 <button

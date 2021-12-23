@@ -12,13 +12,19 @@ export default class App extends Component {
     }
   }
   
+  btnCerrar = (id) => {
+    this.setState((state) => ({
+      listaCiudades: state.listaCiudades.filter((c) => c.id !== id)
+    }));
+  }
+
 
   buscador = (ciudad) => {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=4219bde49ede151ec3c27147df0cdbb3&units=metric`)
             .then(r => r.json())
             .then((recurso) => {
                 if (recurso.main !== undefined) {
-                    const ciudad = {
+                  const ciudad = {
                         min: Math.round(recurso.main.temp_min),
                         max: Math.round(recurso.main.temp_max),
                         img: recurso.weather[0].icon,
@@ -38,14 +44,13 @@ export default class App extends Component {
                     alert("Ciudad no encontrada");
                 }
             });
-    };
-  
+  };
 
   render() {
     return (
       <div>
         <Nav buscador={this.buscador} />
-        <Contenedor listaCiudades={this.state.listaCiudades} />
+        <Contenedor listaCiudades={this.state.listaCiudades} btnCerrar={this.btnCerrar} />
       </div>
     )
   }
