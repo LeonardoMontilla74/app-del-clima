@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import style from "../styles/Tarjeta.module.css"
 
 export default class Tarjeta extends Component {
@@ -19,7 +20,9 @@ export default class Tarjeta extends Component {
                     </div>
                     <div className="col-sm-4 col-md-4 col-lg-4">
                             <img className="iconoClima" src={`http://openweathermap.org/img/wn/${this.props.img}@2x.png`} width="50" height="50" alt="" />
-                            <button className={style.button}>Detalles</button>
+                            <Link to={`ciudad/${this.props.id}`}>
+                                <button className={style.button}>Detalles</button>
+                            </Link>
                     </div>
                 </div>
                 </div>
