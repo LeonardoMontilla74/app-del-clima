@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import Tarjeta from './Tarjeta';
-import Style from '../styles/Contenedor.module.css'
+import style from '../styles/Contenedor.module.css'
 
 export default class Contenedor extends Component {
     render() {
         return (
-            <div className={Style.tarjetas}>
+            <div className={style.tarjetas}>
                 {this.props.listaCiudades.map(c => <Tarjeta
                     key={c.id}
+                    id={c.id}
                     name={c.name}
                     min={c.min}
                     max={c.max}
                     img={c.img}
-                    id={c.id}
                     btnCerrar={() => this.props.btnCerrar(c.id)}
           /> )}
       </div>

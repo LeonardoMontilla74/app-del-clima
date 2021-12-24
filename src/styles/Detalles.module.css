@@ -1,12 +1,12 @@
 .card{
     margin: 20px;
-  width: 20rem;
-  height: 20rem;
-  text-align: center;
-  background-color: var(--fondo-transparent-black);
-  color: var(--letter-white);
-  border-radius: 10px;
-}
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: var(--fondo-transparent-black);
+    color: var(--letter-white);
+    border-radius: 10px;
+    }
 
 .button {
     border-radius: 8px;

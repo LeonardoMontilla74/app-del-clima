@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Logo from '../styles/img/logoHenry.png'
+import { Link } from "react-router-dom";
+import Logo from '../styles/img/logoHenry.png';
 import Buscador from './Buscador';
 
 export default class Nav extends Component {
@@ -10,7 +11,9 @@ export default class Nav extends Component {
                     <a className="navbar-brand" href="https://www.soyhenry.com/">
                         <img src={Logo} alt="soyHenry.com" width= "100px" />
                     </a>
-                <h1>App del clima</h1>
+                    <Link to="/about">
+                        <h1>App del clima</h1>
+                    </Link>
                     <Buscador buscador={this.props.buscador}/>
                 </div>
             </nav>
